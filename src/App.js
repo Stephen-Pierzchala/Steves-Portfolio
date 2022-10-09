@@ -1,13 +1,22 @@
 import React from 'react'
+import Landing from './pages/Landing'
+import Layout from './pages/Layout'
+import Contact from './pages/Contact'
+import Resume from './pages/Resume'
+import PostList from './pages/PostList'
+import { Routes, Route } from 'react-router-dom'
 
 export function App() {
 	return (
 		<>
-			<button className="rounded bg-blue-500 p-2 transition hover:bg-blue-600">
-				Test
-			</button>
-			<h1 className="text-3xl font-bold underline">Hello world!</h1>
-			<div className="bg-blue-500">test</div>
+			<Routes>
+				<Route path="/" element={<Layout />}>
+					<Route path="/" element={<Landing />} />
+					<Route path="/posts" element={<PostList />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/resume" element={<Resume />} />
+				</Route>
+			</Routes>
 		</>
 	)
 }
