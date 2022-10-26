@@ -1,5 +1,5 @@
 {
-	"name": "steves-portfolio",
+	"name": "steves-portfolio-poc",
 	"version": "1.0.0",
 	"description": "",
 	"source": "src/index.html",
@@ -25,6 +25,8 @@
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-react": "^7.31.8",
 		"parcel": "^2.7.0",
+		"parcel-transformer-markdown": "^2.1.1",
+		"path-browserify": "^1.0.1",
 		"postcss": "^8.4.17",
 		"prettier": "^2.7.1",
 		"prettier-plugin-tailwindcss": "^0.1.13",
@@ -32,8 +34,10 @@
 		"tailwindcss": "^3.1.8"
 	},
 	"dependencies": {
+		"path": "^0.12.7",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-markdown": "^8.0.3",
 		"react-router-dom": "~6.3.0"
 	}
 }
