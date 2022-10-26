@@ -1,3 +1,6 @@
 node_modules
 dist
 .parcel-cache
+src/data/drafts/*
+backlog.md
+notes.md
